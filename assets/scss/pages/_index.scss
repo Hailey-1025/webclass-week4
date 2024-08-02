@@ -1,0 +1,104 @@
+/* header */
+.header{
+  background: url(../images/home-header.png) no-repeat center;
+  background-size: cover;
+  height: 787px;
+  @include pad{
+    background: url(../images/home-header-sm.png) no-repeat center;
+    background-size: cover;
+  }
+  @include mobile{
+    height: 396px;
+  }
+  &-content{
+    text-align: right;
+    height: 100%;
+    @include mobile{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+.btn{
+  background: $primary;
+  padding: 6px 12px;
+  &:hover{
+      background: $aide;
+       color: $white;
+  }
+}
+
+/* main */
+.main-img{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  margin-bottom: 16px;
+}
+
+/* project2 */
+.product-design{
+  background: url(../images/index-bg.png) no-repeat center;
+  background-size: cover;
+  @include pad{
+    background: url(../images/index-bg-md.png) no-repeat top;
+    background-size: cover;
+  }
+  @include mobile{
+    background: url(../images/index-bg-sm.png) no-repeat center;
+    background-size: cover;
+  }
+}
+
+/* article */
+.card{
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  height: 100%;
+  &-item{
+    padding: 16px;
+    height: 205px;
+  }
+}
+
+/* form */
+.form{
+  width: 100%;
+  padding: 6px 12px;
+  background: rgb(0 0 0 / 0%);
+}
+::placeholder{
+  opacity: 20%;
+}
+.opinion{
+  height: 136px;
+}
+.label{
+  display: block;
+  margin-bottom: 8px;
+}
+.agree{
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.btn-xl{
+  border: none;
+  background: $primary;
+  font-weight: 700;
+  padding: 16px 176px;
+  color: $white;
+  &:hover{
+      background: $aide;
+      color: $white;
+  }
+  @include pad{
+      padding: 16px 136px;
+  }
+  @include mobile{
+      padding: 16px 0;
+      display: block;
+      width: 100%;
+  }
+}

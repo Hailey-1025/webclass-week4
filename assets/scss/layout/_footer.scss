@@ -1,0 +1,68 @@
+.footer {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    @include pad{
+        padding-bottom: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    @include mobile{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    &-content{
+        border-bottom: 1px solid white;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        @include mobile{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    &-nav{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 24px;
+        gap: 48px;
+        @include pad{
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        @include mobile{
+            display: none;
+        }
+    }
+    &-community{
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        @include pad{
+            gap: 16px;
+        }
+        @include mobile{
+            gap: 8px;
+        }
+    }
+    &-social{
+        width: 40px;
+        @include mobile{
+            width: 24px;
+        }
+    }
+    &-list{
+        gap: 48px;
+        @include mobile{
+            gap: 0;
+        }
+    }
+    &-icon {
+        font-size: 36px;
+        vertical-align: middle;
+        margin-right: 22px;
+        @include mobile{
+            font-size: 16px;
+            margin-right: 11px;
+        }
+    }
+}

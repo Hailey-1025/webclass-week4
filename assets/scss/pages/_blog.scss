@@ -1,0 +1,18 @@
+.blog{
+    &-nav{
+        gap:48px;
+        @include mobile{
+            gap: 20px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+    &-link{
+        gap: 16px;
+        border-bottom: 1px solid #707070;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
